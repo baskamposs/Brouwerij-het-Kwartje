@@ -1,0 +1,478 @@
+/*
+background: #2C2A2B;
+font-family: poppins, nexa;
+
+*/
+
+/***************** Homepage *****************/
+
+body {
+	margin: 0;
+	display:flex;
+	flex-wrap: wrap;
+}
+
+/*****************HEADER *****************/
+
+header {
+	background:#2C2A2B;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+}
+
+.headerLogo {
+	width:100px;
+	height:100px;
+	margin-left:20px;
+}
+
+.winkelwagen {
+	width:40px;
+	height:40px;
+	margin-right:2%;
+	margin-top:25px;
+}
+
+/***************** NAV *****************/
+
+nav {
+	background: #2C2A2B;
+	width:100%;
+}
+
+
+ul {
+	display:flex;
+	justify-content:space-around;
+}
+
+li {
+	list-style-type:none;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ul > li > a {
+	font-size:18px;
+	font-family: poppins;
+}
+
+
+/***************** HERO *****************/
+
+.heroImage {
+	width:100%;
+	margin-bottom:-4px;
+}
+
+/***************** CTA *****************/
+
+.ctaBalk {
+	display:flex;
+	width:100%;
+	background: #2C2A2B;
+	justify-content: space-between;
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+
+.ctaBalk > p {
+	font-family: nexa;
+	color: #ffffff;
+	margin-left:20px;
+}
+
+.buttonBestellen {
+	background-color:#09c354;
+	border-radius:10px;
+	border:2px solid #03903b;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:14px;
+	align-self:center;
+	padding:10px 10px;
+	text-decoration:none;
+	margin-right:20px;
+}
+
+/***************** Section *****************/
+
+.sectionHomePage {
+	justify-content: space-around; 
+	display:flex;
+	margin-top:50px;
+	margin-bottom:20px;
+}
+
+.homePageBeerOne, 
+.homePageBeerTwo, 
+.homePageBeerThree, 
+.homePageBeerFour {
+	width:22%;
+}
+
+.bekijkMeer {
+	width:100%;
+	margin-bottom:20px;
+}
+
+.bekijkMeerTekst {
+	justify-content: flex-end;
+	display:flex;
+	margin-right: 20px;
+	color: #09C353;
+	font-family:nexa;
+}
+
+/*****************Footer *****************/
+
+footer {
+	background: #2C2A2B;
+	width:100%;
+	display:flex;
+	justify-content: space-between;
+
+
+}
+
+.logoFooter {
+	width:100px;
+	margin-left:20px;
+
+}
+
+
+.tekstFooter {
+	color:#ffffff;
+	padding-top:20px;
+}
+
+
+
+.logoFb,
+.logoIg,
+.logoTw {
+	width:25px;
+	height:25px;
+	margin-top:20px;
+	margin-right:20px;
+}
+
+/***************** Over Ons *****************/
+
+.onsTeam {
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	width:100%;
+	font-size: 22px;
+	font-family: nexa;
+}
+
+.sectionOverOns {
+	display:flex;
+	width:100%;
+	justify-content: space-around;
+	padding-bottom:5px;
+}
+
+.sam,
+.patrick,
+.maaike {
+	width:300px;
+}
+
+.sectionOverOnsTekst  {
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+
+}
+
+.sectionOverOnsTekst > p {
+	font-size:18px;
+	font-family: nexa;
+}
+
+
+/***************** Evenementen *****************/
+
+.evenementen {
+	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
+	width:100%;
+	font-size: 22px;
+	font-family: nexa;
+}
+
+.sectionOverOns {
+	display:flex;
+	width:100%;
+	justify-content: space-around;
+	padding-bottom:5px;
+}
+
+.feesten,
+.festivals,
+.stranden {
+	width:300px;
+}
+
+.sectionEvenementenTekst  {
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+
+}
+
+.sectionEvenementenTekst > p {
+	font-size:18px;
+	font-family: nexa;
+}
+
+/***************** Ons bier *****************/
+
+
+.onsBierOne, 
+.onsBierTwo, 
+.onsBierThree, 
+.onsBierFour {
+	width:100%;
+}
+
+
+.onsBierSection {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.onsBierArticle {
+	width: 20%;
+}
+
+.buttonsArticle {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.sectionOnsBier {
+	justify-content: space-around; 
+	display:flex;
+	margin-top:50px;
+	margin-bottom:0px;
+}
+
+.tekstOnsBier {
+	justify-content: space-around;
+	display:flex;
+	width:100%;	
+}
+
+.onsBierArticle > p {
+	font-family: poppins;
+	font-weight:lighter;
+}
+
+.bekijkenOne {
+	background-color:#ffffff;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:poppins;
+	font-weight:300;
+	font-size:14px;
+	padding:12px 12px;
+	text-decoration:none;
+}
+
+.winkelmandjeOne {
+	background-color:#ffffff;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:poppins;
+	font-weight:300;
+	font-size:14px;
+	padding:12px 12px;
+	text-decoration:none;
+}
+
+
+.buttonsOnsbier {
+	display:flex;
+	width:100%;
+	justify-content: space-around;
+	margin-bottom:20px;
+}
+
+.contactTekst {
+	width:100%;
+	text-align:center;
+}
+
+/***************** Contact *****************/
+
+.sectionContact {
+	display:flex;
+	flex-direction: row;
+	width:100%;
+}
+
+.infoKwartje {
+	width:30%;
+	margin-left:100px;
+}
+
+.infoKwartje > p {
+	font-family: poppins;
+	font-weight:lighter;
+}
+
+.contactTekst {
+	font-family:poppins;
+}
+
+
+.formulier {
+    display: inline-block;
+}
+
+.formulier label {
+    display: block;
+}
+
+input[type="text" ] {
+	width:200px;
+	margin-bottom:20px;
+	height:30px;
+	margin-right:50px;
+}
+
+input[type="email" ] {
+	width:200px;
+	margin-bottom:20px;
+	height:30px;
+
+}
+
+.formulierArea label {
+	display:block;
+}
+
+textarea {
+	width:462px;
+}
+
+label {
+	padding-bottom: 12px;
+	font-family:poppins;
+	font-weight:lighter;
+	font-size:14px;
+}
+
+.verzendenFormulier {
+	background-color:#09c354;
+	border-radius:6px;
+	border:2px solid #03903b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:11px 200px;
+	text-decoration:none;
+	margin-top:20px;
+}
+
+form {
+	margin-bottom: 20px;
+}
+
+
+/***************** Info Bier *****************/
+
+.infoBierTekst {
+	width:100%;
+	text-align: center;
+	margin-top:40px;
+	margin-bottom:40px;
+	font-family: poppins;
+}
+
+.infoBierSection {
+	width:100%;
+	display:flex;
+	justify-content: space-around;
+}
+
+.infoLeft {
+	width:30%;
+}
+
+.infoRight {
+	width:40%;
+}
+
+.infoRight > p {
+	width:80%;
+	font-family: nexa;
+}
+
+.infoRight > p:first-child {
+	margin-top:0px;
+}
+
+.fotoInfoBier {
+	width:500px;
+}
+
+.infoBierOnder {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.infoBierArticle {
+	width: 20%;
+}
+
+.infoBierArticle > p {
+	font-family: poppins;
+	font-weight:lighter;
+}
+
+.infoBierOne, 
+.infoBierTwo, 
+.infoBierThree, 
+.infoBierFour {
+	width:100%;
+}
+
+.inWinkelwagen {
+	background-color:#09c354;
+	border:2px solid #03903b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	padding:14px 40px;
+	text-decoration:none;
+}
