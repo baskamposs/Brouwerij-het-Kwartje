@@ -8,8 +8,8 @@ font-family: poppins, nexa;
 
 body {
 	margin: 0;
-	display:flex;
-	flex-wrap: wrap;
+	padding: 0;
+	display: block;
 }
 
 /*****************HEADER *****************/
@@ -36,19 +36,24 @@ header {
 
 /***************** NAV *****************/
 
-nav {
+.containerNav{
+	display: flex;
+	width: auto;
+}
+
+.navigatie {
 	background: #2C2A2B;
 	width:100%;
 }
 
 
-ul {
-	display:flex;
-	justify-content:space-around;
-}
-
 li {
 	list-style-type:none;
+	display: inline-block;
+}
+
+.navigatie > ul > li {
+		margin-right: 100px;
 }
 
 a {
@@ -237,6 +242,17 @@ footer {
 	font-family: nexa;
 }
 
+.naarAgendaButton {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: #ffffff;
+	padding: 10px 78px;
+}
+
+.naarAgendaButton > a {
+	color: #000000;
+}
+
 /***************** Ons bier *****************/
 
 
@@ -322,6 +338,7 @@ footer {
 .contactTekst {
 	width:100%;
 	text-align:center;
+	font-family:poppins;
 }
 
 /***************** Contact *****************/
@@ -333,7 +350,7 @@ footer {
 }
 
 .infoKwartje {
-	width:30%;
+	width:35%;
 	margin-left:100px;
 }
 
@@ -343,7 +360,11 @@ footer {
 }
 
 .contactTekst {
+	width:100%;
+	text-align:center;
 	font-family:poppins;
+	font-size:20px;
+
 }
 
 
@@ -391,7 +412,7 @@ label {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:nexa;
 	font-size:14px;
 	padding:11px 200px;
 	text-decoration:none;
@@ -402,6 +423,37 @@ form {
 	margin-bottom: 20px;
 }
 
+/***************** Contact Bedankt *****************/
+
+.bedanktKwartje {
+	text-align: center;
+}
+
+.bedanktKwartje > h2 {
+	text-align: center;
+	font-weight:normal;
+	font-family:nexa;
+	font-size:20px;
+	margin-top: 40px;
+}
+
+.bedanktKwartje > p {
+	font-family: nexa;
+	font-size: 12px;
+}
+
+.bedanktTerugButton {
+	background:#09c354;
+	border-radius:10px;
+	border:2px solid #03903b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:nexa;
+	font-size:16px;
+	padding:11px 50px;
+	text-decoration:none;
+}
 
 /***************** Info Bier *****************/
 
@@ -416,15 +468,18 @@ form {
 .infoBierSection {
 	width:100%;
 	display:flex;
-	justify-content: space-around;
 }
 
 .infoLeft {
 	width:30%;
+	margin-left:100px;
 }
 
 .infoRight {
 	width:40%;
+	margin-left:100px;
+	display: flex;
+
 }
 
 .infoRight > p {
@@ -437,7 +492,7 @@ form {
 }
 
 .fotoInfoBier {
-	width:500px;
+	width:100%;
 }
 
 .infoBierOnder {
@@ -471,8 +526,171 @@ form {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: nexa;
 	font-size:14px;
 	padding:14px 40px;
-	text-decoration:none;
+	text-decoration: none;
+}
+
+.alleInformatieBier > ul > li {
+	display: block;
+	font-family: nexa;
+	margin-bottom: 20px;
+	
+}
+
+.alleInformatieBierTwo > ul > li {
+	display: block;
+	font-family: nexa;
+	margin-bottom: 20px;
+}
+
+.buttonWinkelwagen {
+	text-align: center;
+	
+}
+
+.buttonWinkelwagenOnsBier {
+	text-align: center;
+	justify-content: center;
+	width:100%;
+}
+
+.andereBierKiezen {
+	background: #ffffff;
+	padding: 5px 90px;
+	margin-top: 10px;
+	border: 1px solid #000000;
+	font-family: nexa;
+}
+
+/***************** Kalender *****************/
+
+.maand {
+    padding: 60px 30px;
+    width: 100%;
+    background: #E14D25;
+    text-align: center;
+	box-sizing:border-box;
+}
+
+.maand ul {
+    margin: 0;
+  	padding: 0;
+}
+
+.maand ul li {
+  	color: #ffffff;
+  	font-size: 20px;
+  	text-transform: uppercase;
+  	letter-spacing: 3px;
+}
+
+.maand .terug {
+  	float: left;
+  	padding-top: 10px;
+}
+
+.maand .volgende {
+  	float: right;
+  	padding-top: 10px;
+}
+
+.dagenvdWeek {
+  	margin: 0;
+  	padding: 10px 0;
+  	background-color: #ddd;
+	font-family: nexa;
+	font-weight: bold;
+
+}
+
+.dagenvdWeek li {
+  	display: inline-block;
+  	width: 13.6%;
+  	color: #666;
+  	text-align: center;
+}
+
+.getallenMaand {
+  	padding: 10px 0;
+  	background: #eee;
+  	margin: 0;
+	font-family: nexa;
+
+}
+
+.getallenMaand li {
+  	list-style-type: none;
+  	display: inline-block;
+  	width: 13.6%;
+  	text-align: center;
+  	margin-bottom: 5px;
+  	font-size:12px;
+  	color: #777;
+}
+
+.evenementenUitgebreid {
+	margin-left:40px;
+	margin-top:50px;
+	font-family: nexa;
+
+}
+
+.evenementenUitgebreid > h3 {
+	width:20%;
+	float: left;
+	margin-top:0px;
+	color:#03903B;
+	font-weight:normal;
+	font-size:22px;
+}
+
+.evenementenUitgebreid > .evenementenUitleg {
+	font-size:20px;
+	margin-bottom: 0px;
+}
+
+.evenementenUitgebreid > .evenementenPlaats {
+	font-size: 14px;
+	margin-top:0px;
+	font-weight:200;
+	color: #A8A8A8;
+
+}
+
+hr {
+	width:50%;
+	float:left;
+}
+
+.evenementenUitgebreidTwo {
+	margin-top:40px;
+	margin-left:40px;
+	font-family: nexa;
+}
+
+.evenementenUitgebreidTwo > h3 {
+	width:20%;
+	float: left;
+	margin-top:0px;
+	color:#03903B;
+	font-weight:normal;
+	font-size:22px;
+}
+
+.evenementenUitgebreidTwo > .evenementenUitleg {
+	font-size:20px;
+	margin-bottom: 0px;
+}
+
+.evenementenUitgebreidTwo > .evenementenPlaats {
+	font-size: 14px;
+	margin-top:0px;
+	font-weight:200;
+	color: #A8A8A8;
+}
+
+.kalenderBelangrijkeEvenementen {
+	margin-bottom: 50px;
 }
